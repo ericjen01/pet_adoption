@@ -1,0 +1,167 @@
+/* GLOBAL STYLES---------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  --daylight: #efedf8;
+  --white: #fff;
+  --sidewideText: rgb(122, 91, 91);
+  --black: #000;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  color: var(--sidewideText);
+}
+.container {
+  flex-grow: 1;
+  background-color: var(--daylight);
+}
+h1 {
+  font-size: 25px;
+  font-weight: 400;
+}
+h2 {
+  font-size: 35px;
+  font-weight: 400;
+}
+p {
+  font-size: 17px;
+}
+p2 {
+  font-size: 20px;
+}
+.blockDisplay {
+  display: block;
+}
+.flexDisplay {
+  display: flex;
+}
+.justifyContentCenter {
+  justify-content: center;
+}
+.spaceBetween {
+  justify-content: space-between;
+}
+.contained {
+  width: 70%;
+  margin: auto;
+}
+/*HOME PAGE------------------------------------------------------------*/
+
+header {
+  background-color: var(--white);
+  padding-top: 30px;
+  border-bottom: solid 30px #efedf8;
+  .headerWrap {
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+      width: 80px;
+      height: fit-content;
+    }
+    hr {
+      margin-top: 5px;
+    }
+    li {
+      list-style-type: none;
+      .navLink {
+        text-decoration: none;
+        margin-left: 30px;
+      }
+    }
+  }
+}
+/*SHOWCASE---------------------------------------------------------*/
+.showcase {
+  margin: auto;
+  width: 1920px;
+  overflow: hidden;
+  position: relative;
+
+  .manualControl {
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    .leftBtn,
+    .rightBtn {
+      z-index: 9;
+      font-size: 100px;
+      color: rgba(255, 255, 255, 0.6);
+      text-decoration: none;
+      font-weight: 500;
+      text-shadow: 2px 2px 15px var(--black);
+      cursor: pointer;
+      &:hover {
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
+
+  .slideSetting {
+    width: 1920px;
+    position: relative;
+    .img_text {
+      text-align: center;
+      .facts {
+        position: absolute;
+        width: fit-content;
+        bottom: 10%;
+        z-index: 9;
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        padding: 15px;
+        h2,
+        p2 {
+          color: var(--white);
+          text-shadow: 0 0 2px var(--black);
+        }
+      }
+    }
+  }
+}
+
+.mission {
+  text-align: center;
+  h1 {
+    margin-top: 10px;
+  }
+  hr {
+    margin: 15px;
+  }
+}
+
+/* FOOTER STYLE------------------------------------------------------------*/
+footer {
+  margin: 50px auto 0 auto;
+  border-top: 1px solid var(--sidewideText);
+  text-align: center;
+  height: 80px;
+  width: 100%;
+
+  .logoBar {
+    display: flex;
+    margin: auto;
+    width: 100px;
+    .gh {
+      background-image: url(https://ericjen01.github.io/portfolio_00/assets/images/gh.png);
+      background-size: contain;
+      width: 30px;
+      height: 30px;
+      margin: 10px;
+    }
+    .cp {
+      background-image: url(https://ericjen01.github.io/portfolio_00/assets/images/cp.png);
+      background-size: contain;
+      width: 30px;
+      height: 30px;
+      margin: 10px;
+    }
+  }
+}
+
+//https://newsapi.org/v2/everything?q=petsANDadoption&domains=cbc.ca&language=en&pageSize=3&apiKey=77f9c2876920444b89d135a7e5d07b5e

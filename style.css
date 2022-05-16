@@ -1,0 +1,216 @@
+/* GLOBAL STYLES---------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  --daylight: #efedf8;
+  --white: #fff;
+  --sidewideText: rgb(122, 91, 91);
+  --black: #000;
+}
+
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: var(--sidewideText);
+}
+
+.container {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: var(--daylight);
+}
+
+h1 {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 17px;
+}
+
+p2 {
+  font-size: 20px;
+}
+
+.blockDisplay {
+  display: block;
+}
+
+.flexDisplay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.justifyContentCenter {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.spaceBetween {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contained {
+  width: 70%;
+  margin: auto;
+}
+
+/*HOME PAGE------------------------------------------------------------*/
+header {
+  background-color: var(--white);
+  padding-top: 30px;
+  border-bottom: solid 30px #efedf8;
+}
+
+header .headerWrap {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .headerWrap .logo {
+  width: 80px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+header .headerWrap hr {
+  margin-top: 5px;
+}
+
+header .headerWrap li {
+  list-style-type: none;
+}
+
+header .headerWrap li .navLink {
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+/*SHOWCASE---------------------------------------------------------*/
+.showcase {
+  margin: auto;
+  width: 1920px;
+  overflow: hidden;
+  position: relative;
+}
+
+.showcase .manualControl {
+  position: absolute;
+  top: 35%;
+  width: 100%;
+}
+
+.showcase .manualControl .leftBtn,
+.showcase .manualControl .rightBtn {
+  z-index: 9;
+  font-size: 100px;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-weight: 500;
+  text-shadow: 2px 2px 15px var(--black);
+  cursor: pointer;
+}
+
+.showcase .manualControl .leftBtn:hover,
+.showcase .manualControl .rightBtn:hover {
+  color: white;
+}
+
+.showcase .slideSetting {
+  width: 1920px;
+  position: relative;
+}
+
+.showcase .slideSetting .img_text {
+  text-align: center;
+}
+
+.showcase .slideSetting .img_text .facts {
+  position: absolute;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  bottom: 10%;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.showcase .slideSetting .img_text .facts h2,
+.showcase .slideSetting .img_text .facts p2 {
+  color: var(--white);
+  text-shadow: 0 0 2px var(--black);
+}
+
+.mission {
+  text-align: center;
+}
+
+.mission h1 {
+  margin-top: 10px;
+}
+
+.mission hr {
+  margin: 15px;
+}
+
+/* FOOTER STYLE------------------------------------------------------------*/
+footer {
+  margin: 50px auto 0 auto;
+  border-top: 1px solid var(--sidewideText);
+  text-align: center;
+  height: 80px;
+  width: 100%;
+}
+
+footer .logoBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  width: 100px;
+}
+
+footer .logoBar .gh {
+  background-image: url(https://ericjen01.github.io/portfolio_00/assets/images/gh.png);
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
+
+footer .logoBar .cp {
+  background-image: url(https://ericjen01.github.io/portfolio_00/assets/images/cp.png);
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
+/*# sourceMappingURL=style.css.map */
